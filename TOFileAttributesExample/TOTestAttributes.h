@@ -10,18 +10,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-//TOPropertyAccessorDataTypeUnknown,
-//TOPropertyAccessorDataTypeInt,
-//TOPropertyAccessorDataTypeFloat,
-//TOPropertyAccessorDataTypeDouble,
-//TOPropertyAccessorDataTypeBool,
-//TOPropertyAccessorDataTypeDate,
-//TOPropertyAccessorDataTypeString,
-//TOPropertyAccessorDataTypeData,
-//TOPropertyAccessorDataTypeArray,
-//TOPropertyAccessorDataTypeDictionary,
-//TOPropertyAccessorDataTypeObject
-
 @interface TOTestAttributes : TOFileAttributes
 
 @property (nonatomic, assign) NSUInteger integerValue;

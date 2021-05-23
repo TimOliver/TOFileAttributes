@@ -14,7 +14,18 @@
 		221D732826569BAE004F6126 /* TOFileAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 221D732726569BAE004F6126 /* TOFileAttributes.m */; };
 		221D732B26569BBA004F6126 /* TOPropertyAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 221D732A26569BBA004F6126 /* TOPropertyAccessor.m */; };
 		22D992D7265A5F09001A8325 /* TOTestAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D992D6265A5F09001A8325 /* TOTestAttributes.m */; };
+		22D992DF265AA4BE001A8325 /* TOFileAttributesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D992DE265AA4BE001A8325 /* TOFileAttributesTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22D992E1265AA4BE001A8325 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 221D7301265699E1004F6126 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 221D7308265699E1004F6126;
+			remoteInfo = TOFileAttributesExample;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		221D7309265699E1004F6126 /* TOFileAttributesExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TOFileAttributesExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,10 +41,20 @@
 		221D732A26569BBA004F6126 /* TOPropertyAccessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOPropertyAccessor.m; sourceTree = "<group>"; };
 		22D992D5265A5F09001A8325 /* TOTestAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOTestAttributes.h; sourceTree = "<group>"; };
 		22D992D6265A5F09001A8325 /* TOTestAttributes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOTestAttributes.m; sourceTree = "<group>"; };
+		22D992DC265AA4BE001A8325 /* TOFileAttributesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TOFileAttributesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D992DE265AA4BE001A8325 /* TOFileAttributesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOFileAttributesTests.m; sourceTree = "<group>"; };
+		22D992E0265AA4BE001A8325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		221D7306265699E1004F6126 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D992D9265AA4BE001A8325 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,6 +69,7 @@
 			children = (
 				221D732526569A0E004F6126 /* TOFileAttributes */,
 				221D730B265699E1004F6126 /* TOFileAttributesExample */,
+				22D992DD265AA4BE001A8325 /* TOFileAttributesTests */,
 				221D730A265699E1004F6126 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				221D7309265699E1004F6126 /* TOFileAttributesExample.app */,
+				22D992DC265AA4BE001A8325 /* TOFileAttributesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +109,15 @@
 			path = TOFileAttributes;
 			sourceTree = "<group>";
 		};
+		22D992DD265AA4BE001A8325 /* TOFileAttributesTests */ = {
+			isa = PBXGroup;
+			children = (
+				22D992DE265AA4BE001A8325 /* TOFileAttributesTests.m */,
+				22D992E0265AA4BE001A8325 /* Info.plist */,
+			);
+			path = TOFileAttributesTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +138,24 @@
 			productReference = 221D7309265699E1004F6126 /* TOFileAttributesExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		22D992DB265AA4BE001A8325 /* TOFileAttributesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22D992E3265AA4BE001A8325 /* Build configuration list for PBXNativeTarget "TOFileAttributesTests" */;
+			buildPhases = (
+				22D992D8265AA4BE001A8325 /* Sources */,
+				22D992D9265AA4BE001A8325 /* Frameworks */,
+				22D992DA265AA4BE001A8325 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22D992E2265AA4BE001A8325 /* PBXTargetDependency */,
+			);
+			name = TOFileAttributesTests;
+			productName = TOFileAttributesTests;
+			productReference = 22D992DC265AA4BE001A8325 /* TOFileAttributesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -116,6 +166,10 @@
 				TargetAttributes = {
 					221D7308265699E1004F6126 = {
 						CreatedOnToolsVersion = 12.5;
+					};
+					22D992DB265AA4BE001A8325 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 221D7308265699E1004F6126;
 					};
 				};
 			};
@@ -133,6 +187,7 @@
 			projectRoot = "";
 			targets = (
 				221D7308265699E1004F6126 /* TOFileAttributesExample */,
+				22D992DB265AA4BE001A8325 /* TOFileAttributesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -144,6 +199,13 @@
 			files = (
 				221D731C265699E2004F6126 /* LaunchScreen.storyboard in Resources */,
 				221D7319265699E2004F6126 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D992DA265AA4BE001A8325 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +224,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22D992D8265AA4BE001A8325 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D992DF265AA4BE001A8325 /* TOFileAttributesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22D992E2265AA4BE001A8325 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 221D7308265699E1004F6126 /* TOFileAttributesExample */;
+			targetProxy = 22D992E1265AA4BE001A8325 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		221D731A265699E2004F6126 /* LaunchScreen.storyboard */ = {
@@ -326,6 +404,44 @@
 			};
 			name = Release;
 		};
+		22D992E4265AA4BE001A8325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				INFOPLIST_FILE = TOFileAttributesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.TOFileAttributesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TOFileAttributesExample.app/TOFileAttributesExample";
+			};
+			name = Debug;
+		};
+		22D992E5265AA4BE001A8325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				INFOPLIST_FILE = TOFileAttributesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.TOFileAttributesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TOFileAttributesExample.app/TOFileAttributesExample";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -343,6 +459,15 @@
 			buildConfigurations = (
 				221D7323265699E2004F6126 /* Debug */,
 				221D7324265699E2004F6126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22D992E3265AA4BE001A8325 /* Build configuration list for PBXNativeTarget "TOFileAttributesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D992E4265AA4BE001A8325 /* Debug */,
+				22D992E5265AA4BE001A8325 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
