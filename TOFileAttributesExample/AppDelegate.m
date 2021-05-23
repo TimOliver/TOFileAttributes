@@ -19,7 +19,7 @@
     // Create the attributes object
     TOTestAttributes *attributes = [TOTestAttributes attributesWithFileURL:self.fileURL];
 
-    NSLog(@"Writing attributes to disk");
+    NSLog(@"**************** Writing attributes to disk ****************");
 
     // Test writing attributes out to the file
     attributes.integerValue = 1;
@@ -33,8 +33,8 @@
     attributes.dictionaryValue = @{@"Greeting": @"Hello world" };
     attributes.colorValue = [UIColor redColor];
 
-    NSLog(@"File written. Reading back values.");
-
+    // Test reading the values back out
+    NSLog(@"**************** File written. Reading back values. ****************");
     NSLog(@"Integer value: %ld", (long)attributes.integerValue);
     NSLog(@"Float value: %f", attributes.floatValue);
     NSLog(@"Double value: %f", attributes.doubleValue);
@@ -45,6 +45,11 @@
     NSLog(@"Array value: %@", attributes.arrayValue);
     NSLog(@"Dictionary value: %@", attributes.dictionaryValue);
     NSLog(@"Color value: %@", attributes.colorValue);
+
+    // If no errors occurred, `latestError` will be nil
+    if (attributes.latestError == nil) {
+        NSLog(@"**************** Success! No errors occurred. ****************");
+    }
 }
 
 - (NSURL *)fileURL

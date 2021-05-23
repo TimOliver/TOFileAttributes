@@ -37,15 +37,18 @@ NS_SWIFT_NAME(FileAttributes)
 @property (nonatomic, strong, nullable, readonly) NSError *latestError;
 
 /// Returns an attributes object linked to the provided file.
+/// Instances are cached in memory and calling this method multiple times
+/// will return the same instance.
 /// @param fileURL A URL to a file in the local file system.
 + (instancetype)attributesWithFileURL:(NSURL *)fileURL;
 
 /// Creates a new attributes object linked to the provided file.
-/// Properties are cached in memory after the first time they're loaded.
+/// Properties are cached in memory after the first time they're loaded from disk.
 /// @param fileURL A URL to a file in the local file system.
 - (instancetype)initWithFileURL:(NSURL *)fileURL;
 
 /// Creates a new attributes object linked to the provided file.
+/// Caching can be disabled to directly access the disk every time.
 /// @param fileURL A URL to a file in the local file system.
 /// @param cached Whether to cache the properties in memory.
 - (instancetype)initWithFileURL:(NSURL *)fileURL cached:(BOOL)cached;
