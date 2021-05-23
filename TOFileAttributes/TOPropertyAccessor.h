@@ -28,8 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM (NSInteger, TOPropertyAccessorDataType) {
     TOPropertyAccessorDataTypeUnknown,
     TOPropertyAccessorDataTypeInt,
+    TOPropertyAccessorDataTypeUnsignedInt,
     TOPropertyAccessorDataTypeFloat,
-    TOPropertyAccessorDataTypeDouble,
     TOPropertyAccessorDataTypeBool,
     TOPropertyAccessorDataTypeDate,
     TOPropertyAccessorDataTypeString,
@@ -52,8 +52,10 @@ NS_SWIFT_NAME(PropertyAccessor)
 /// associated with the provided property.
 /// @param propertyName The name of the property to retrieve
 /// @param type The expected data type of the property
+/// @param objectClass If the type is an object, the expected class it needs to be
 - (nullable id)valueForProperty:(NSString *)propertyName
-                           type:(TOPropertyAccessorDataType)type;
+                           type:(TOPropertyAccessorDataType)type
+                    objectClass:(nullable Class)objectClass;
 
 /// Override this method to set new values to the backing
 /// store for a property.

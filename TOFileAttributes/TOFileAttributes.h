@@ -31,9 +31,29 @@ NS_SWIFT_NAME(FileAttributes)
 /// cause any conflicts. Default is the app's bundle identifier (eg 'com.company.app')
 @property (nonatomic, copy, null_resettable) NSString *identifierPrefix;
 
-/// Create a new instance with the provided file URL
+/// If the very last read/write operation failed, the error from that failure
+/// will be exposed through this property. This can be used to guarantee mission
+/// critical operations successfully went through.
+@property (nonatomic, strong, nullable, readonly) NSError *latestError;
+
+/// Returns an attributes object linked to the provided file.
+/// @param fileURL A URL to a file in the local file system.
++ (instancetype)attributesWithFileURL:(NSURL *)fileURL;
+
+/// Creates a new attributes object linked to the provided file.
+/// Properties are cached in memory after the first time they're loaded.
 /// @param fileURL A URL to a file in the local file system.
 - (instancetype)initWithFileURL:(NSURL *)fileURL;
+
+/// Creates a new attributes object linked to the provided file.
+/// @param fileURL A URL to a file in the local file system.
+/// @param cached Whether to cache the properties in memory.
+- (instancetype)initWithFileURL:(NSURL *)fileURL cached:(BOOL)cached;
+
+/// Directly creating instances isn't allowed. Please use
+/// `attributesWithFileURL:` instead
+/// :nodoc:
+- (instancetype)init __attribute__((unavailable("Use `attributesWithFileURL:` instead")));
 
 @end
 
