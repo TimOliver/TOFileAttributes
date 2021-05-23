@@ -13,6 +13,7 @@
 		221D731F265699E2004F6126 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 221D731E265699E2004F6126 /* main.m */; };
 		221D732826569BAE004F6126 /* TOFileAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 221D732726569BAE004F6126 /* TOFileAttributes.m */; };
 		221D732B26569BBA004F6126 /* TOPropertyAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 221D732A26569BBA004F6126 /* TOPropertyAccessor.m */; };
+		22D992D7265A5F09001A8325 /* TOTestAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D992D6265A5F09001A8325 /* TOTestAttributes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		221D732726569BAE004F6126 /* TOFileAttributes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOFileAttributes.m; sourceTree = "<group>"; };
 		221D732926569BBA004F6126 /* TOPropertyAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOPropertyAccessor.h; sourceTree = "<group>"; };
 		221D732A26569BBA004F6126 /* TOPropertyAccessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOPropertyAccessor.m; sourceTree = "<group>"; };
+		22D992D5265A5F09001A8325 /* TOTestAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOTestAttributes.h; sourceTree = "<group>"; };
+		22D992D6265A5F09001A8325 /* TOTestAttributes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOTestAttributes.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,8 @@
 		221D730B265699E1004F6126 /* TOFileAttributesExample */ = {
 			isa = PBXGroup;
 			children = (
+				22D992D5265A5F09001A8325 /* TOTestAttributes.h */,
+				22D992D6265A5F09001A8325 /* TOTestAttributes.m */,
 				221D730C265699E1004F6126 /* AppDelegate.h */,
 				221D730D265699E1004F6126 /* AppDelegate.m */,
 				221D7318265699E2004F6126 /* Assets.xcassets */,
@@ -152,6 +157,7 @@
 				221D730E265699E1004F6126 /* AppDelegate.m in Sources */,
 				221D732B26569BBA004F6126 /* TOPropertyAccessor.m in Sources */,
 				221D731F265699E2004F6126 /* main.m in Sources */,
+				22D992D7265A5F09001A8325 /* TOTestAttributes.m in Sources */,
 				221D732826569BAE004F6126 /* TOFileAttributes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
