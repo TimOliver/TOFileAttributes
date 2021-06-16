@@ -12,11 +12,11 @@
 		221D731C265699E2004F6126 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221D731A265699E2004F6126 /* LaunchScreen.storyboard */; };
 		221D731F265699E2004F6126 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 221D731E265699E2004F6126 /* main.m */; };
 		221D732826569BAE004F6126 /* TOFileAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 221D732726569BAE004F6126 /* TOFileAttributes.m */; };
-		221D732B26569BBA004F6126 /* TOPropertyAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 221D732A26569BBA004F6126 /* TOPropertyAccessor.m */; };
 		225772B7265BAEBB00A2B0A1 /* TOFileAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 221D732726569BAE004F6126 /* TOFileAttributes.m */; };
-		225772B8265BAEBD00A2B0A1 /* TOPropertyAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 221D732A26569BBA004F6126 /* TOPropertyAccessor.m */; };
 		22D992D7265A5F09001A8325 /* TOTestAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D992D6265A5F09001A8325 /* TOTestAttributes.m */; };
 		22D992DF265AA4BE001A8325 /* TOFileAttributesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D992DE265AA4BE001A8325 /* TOFileAttributesTests.m */; };
+		737D23BE25B25B83264226D7 /* libPods-TOFileAttributesExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 870730D207D506384244F56D /* libPods-TOFileAttributesExample.a */; };
+		94E4438C6CB7A73556D98F4C /* libPods-TOFileAttributesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF311E45C02D1B9CED4EC76 /* libPods-TOFileAttributesTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,13 +39,18 @@
 		221D731E265699E2004F6126 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		221D732626569BAE004F6126 /* TOFileAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOFileAttributes.h; sourceTree = "<group>"; };
 		221D732726569BAE004F6126 /* TOFileAttributes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOFileAttributes.m; sourceTree = "<group>"; };
-		221D732926569BBA004F6126 /* TOPropertyAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOPropertyAccessor.h; sourceTree = "<group>"; };
-		221D732A26569BBA004F6126 /* TOPropertyAccessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOPropertyAccessor.m; sourceTree = "<group>"; };
+		223BE06F267A488D00CAB031 /* TOFileAttributes.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = TOFileAttributes.podspec; sourceTree = "<group>"; };
 		22D992D5265A5F09001A8325 /* TOTestAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOTestAttributes.h; sourceTree = "<group>"; };
 		22D992D6265A5F09001A8325 /* TOTestAttributes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOTestAttributes.m; sourceTree = "<group>"; };
 		22D992DC265AA4BE001A8325 /* TOFileAttributesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TOFileAttributesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22D992DE265AA4BE001A8325 /* TOFileAttributesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOFileAttributesTests.m; sourceTree = "<group>"; };
 		22D992E0265AA4BE001A8325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		870730D207D506384244F56D /* libPods-TOFileAttributesExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TOFileAttributesExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B750DB268CDADF52B7CA2295 /* Pods-TOFileAttributesExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOFileAttributesExample.debug.xcconfig"; path = "Target Support Files/Pods-TOFileAttributesExample/Pods-TOFileAttributesExample.debug.xcconfig"; sourceTree = "<group>"; };
+		BA143F2899BED773D094A6FF /* Pods-TOFileAttributesExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOFileAttributesExample.release.xcconfig"; path = "Target Support Files/Pods-TOFileAttributesExample/Pods-TOFileAttributesExample.release.xcconfig"; sourceTree = "<group>"; };
+		DEE7EB0502735F5DD2B25DC8 /* Pods-TOFileAttributesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOFileAttributesTests.debug.xcconfig"; path = "Target Support Files/Pods-TOFileAttributesTests/Pods-TOFileAttributesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FBF311E45C02D1B9CED4EC76 /* libPods-TOFileAttributesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TOFileAttributesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDE23E8365F0575024492799 /* Pods-TOFileAttributesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TOFileAttributesTests.release.xcconfig"; path = "Target Support Files/Pods-TOFileAttributesTests/Pods-TOFileAttributesTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				737D23BE25B25B83264226D7 /* libPods-TOFileAttributesExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,19 +66,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94E4438C6CB7A73556D98F4C /* libPods-TOFileAttributesTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02866B4FD75B4841A7D5C7E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				870730D207D506384244F56D /* libPods-TOFileAttributesExample.a */,
+				FBF311E45C02D1B9CED4EC76 /* libPods-TOFileAttributesTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		221D7300265699E1004F6126 = {
 			isa = PBXGroup;
 			children = (
+				223BE06F267A488D00CAB031 /* TOFileAttributes.podspec */,
 				221D732526569A0E004F6126 /* TOFileAttributes */,
 				221D730B265699E1004F6126 /* TOFileAttributesExample */,
 				22D992DD265AA4BE001A8325 /* TOFileAttributesTests */,
 				221D730A265699E1004F6126 /* Products */,
+				46A3094EACC899780BBD6B53 /* Pods */,
+				02866B4FD75B4841A7D5C7E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,8 +124,6 @@
 			children = (
 				221D732626569BAE004F6126 /* TOFileAttributes.h */,
 				221D732726569BAE004F6126 /* TOFileAttributes.m */,
-				221D732926569BBA004F6126 /* TOPropertyAccessor.h */,
-				221D732A26569BBA004F6126 /* TOPropertyAccessor.m */,
 			);
 			path = TOFileAttributes;
 			sourceTree = "<group>";
@@ -120,6 +137,17 @@
 			path = TOFileAttributesTests;
 			sourceTree = "<group>";
 		};
+		46A3094EACC899780BBD6B53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B750DB268CDADF52B7CA2295 /* Pods-TOFileAttributesExample.debug.xcconfig */,
+				BA143F2899BED773D094A6FF /* Pods-TOFileAttributesExample.release.xcconfig */,
+				DEE7EB0502735F5DD2B25DC8 /* Pods-TOFileAttributesTests.debug.xcconfig */,
+				FDE23E8365F0575024492799 /* Pods-TOFileAttributesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,6 +155,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 221D7322265699E2004F6126 /* Build configuration list for PBXNativeTarget "TOFileAttributesExample" */;
 			buildPhases = (
+				624997F9F63C1A58C978DC93 /* [CP] Check Pods Manifest.lock */,
 				221D7305265699E1004F6126 /* Sources */,
 				221D7306265699E1004F6126 /* Frameworks */,
 				221D7307265699E1004F6126 /* Resources */,
@@ -144,6 +173,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22D992E3265AA4BE001A8325 /* Build configuration list for PBXNativeTarget "TOFileAttributesTests" */;
 			buildPhases = (
+				F8D5EA13E5BB59C3F2D229F7 /* [CP] Check Pods Manifest.lock */,
 				22D992D8265AA4BE001A8325 /* Sources */,
 				22D992D9265AA4BE001A8325 /* Frameworks */,
 				22D992DA265AA4BE001A8325 /* Resources */,
@@ -213,13 +243,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		624997F9F63C1A58C978DC93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TOFileAttributesExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8D5EA13E5BB59C3F2D229F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TOFileAttributesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		221D7305265699E1004F6126 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				221D730E265699E1004F6126 /* AppDelegate.m in Sources */,
-				221D732B26569BBA004F6126 /* TOPropertyAccessor.m in Sources */,
 				221D731F265699E2004F6126 /* main.m in Sources */,
 				22D992D7265A5F09001A8325 /* TOTestAttributes.m in Sources */,
 				221D732826569BAE004F6126 /* TOFileAttributes.m in Sources */,
@@ -232,7 +308,6 @@
 			files = (
 				225772B7265BAEBB00A2B0A1 /* TOFileAttributes.m in Sources */,
 				22D992DF265AA4BE001A8325 /* TOFileAttributesTests.m in Sources */,
-				225772B8265BAEBD00A2B0A1 /* TOPropertyAccessor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -362,7 +437,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -372,6 +447,7 @@
 		};
 		221D7323265699E2004F6126 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B750DB268CDADF52B7CA2295 /* Pods-TOFileAttributesExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -391,6 +467,7 @@
 		};
 		221D7324265699E2004F6126 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA143F2899BED773D094A6FF /* Pods-TOFileAttributesExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -410,6 +487,7 @@
 		};
 		22D992E4265AA4BE001A8325 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEE7EB0502735F5DD2B25DC8 /* Pods-TOFileAttributesTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -429,6 +507,7 @@
 		};
 		22D992E5265AA4BE001A8325 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDE23E8365F0575024492799 /* Pods-TOFileAttributesTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

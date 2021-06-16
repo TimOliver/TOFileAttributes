@@ -1,0 +1,16 @@
+PODS:
+  - TOPropertyAccessor (1.1.0)
+
+DEPENDENCIES:
+  - TOPropertyAccessor
+
+SPEC REPOS:
+  trunk:
+    - TOPropertyAccessor
+
+SPEC CHECKSUMS:
+  TOPropertyAccessor: bae5a29797f44bf08b2dca513230524b96d1cd38
+
+PODFILE CHECKSUM: d66b1aadb5601b9f4b55d8e24e67ac8cbf4726f6
+
+COCOAPODS: 1.10.1
