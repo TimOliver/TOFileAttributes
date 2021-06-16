@@ -12,7 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TOTestAttributes : TOFileAttributes
 
-@property (nonatomic, assign) NSUInteger integerValue;
+@property (nonatomic, assign) NSInteger integerValue;
+@property (nonatomic, assign) NSInteger unsignedIntegerValue;
 @property (nonatomic, assign) CGFloat floatValue;
 @property (nonatomic, assign) double doubleValue;
 @property (nonatomic, assign) BOOL boolValue;

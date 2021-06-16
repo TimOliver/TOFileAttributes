@@ -13,6 +13,8 @@
 		221D731F265699E2004F6126 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 221D731E265699E2004F6126 /* main.m */; };
 		221D732826569BAE004F6126 /* TOFileAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 221D732726569BAE004F6126 /* TOFileAttributes.m */; };
 		221D732B26569BBA004F6126 /* TOPropertyAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 221D732A26569BBA004F6126 /* TOPropertyAccessor.m */; };
+		225772B7265BAEBB00A2B0A1 /* TOFileAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 221D732726569BAE004F6126 /* TOFileAttributes.m */; };
+		225772B8265BAEBD00A2B0A1 /* TOPropertyAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 221D732A26569BBA004F6126 /* TOPropertyAccessor.m */; };
 		22D992D7265A5F09001A8325 /* TOTestAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D992D6265A5F09001A8325 /* TOTestAttributes.m */; };
 		22D992DF265AA4BE001A8325 /* TOFileAttributesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D992DE265AA4BE001A8325 /* TOFileAttributesTests.m */; };
 /* End PBXBuildFile section */
@@ -228,7 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				225772B7265BAEBB00A2B0A1 /* TOFileAttributes.m in Sources */,
 				22D992DF265AA4BE001A8325 /* TOFileAttributesTests.m in Sources */,
+				225772B8265BAEBD00A2B0A1 /* TOPropertyAccessor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
