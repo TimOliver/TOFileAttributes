@@ -36,7 +36,7 @@ attributes.cursorPosition = 42;
 
 ## Installation Instructions
 
-<details open>
+<details>
 <summary><b>Manual Installation</b></summary>
 <br>
   
@@ -45,7 +45,7 @@ attributes.cursorPosition = 42;
   
 </details>
 
-<details open>
+<details>
 <summary><b>CocoaPods</b></summary>
 <br>
   
