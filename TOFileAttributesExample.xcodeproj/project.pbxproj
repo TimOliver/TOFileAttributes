@@ -39,7 +39,7 @@
 		221D731E265699E2004F6126 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		221D732626569BAE004F6126 /* TOFileAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOFileAttributes.h; sourceTree = "<group>"; };
 		221D732726569BAE004F6126 /* TOFileAttributes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOFileAttributes.m; sourceTree = "<group>"; };
-		223BE06F267A488D00CAB031 /* TOFileAttributes.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = TOFileAttributes.podspec; sourceTree = "<group>"; };
+		223BE06F267A488D00CAB031 /* TOFileAttributes.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = TOFileAttributes.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		22D992D5265A5F09001A8325 /* TOTestAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOTestAttributes.h; sourceTree = "<group>"; };
 		22D992D6265A5F09001A8325 /* TOTestAttributes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOTestAttributes.m; sourceTree = "<group>"; };
 		22D992DC265AA4BE001A8325 /* TOFileAttributesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TOFileAttributesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
