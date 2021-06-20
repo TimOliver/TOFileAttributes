@@ -37,7 +37,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// but will be deleted if the file is moved to a different file system.
 /// For more information, see https://nshipster.com/extended-file-attributes/
 
-NS_SWIFT_NAME(FileAttributes)
 @interface TOFileAttributes : TOPropertyAccessor
 
 /// The file URL of the file with which these attributes are associated
