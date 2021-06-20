@@ -20,8 +20,11 @@
 //  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 //  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import <UIKit/UIKit.h>
+#if __has_include(<TOPropertyAccessor/TOPropertyAccessor.h>)
+#import <TOPropertyAccessor/TOPropertyAccessor.h>
+#else
 #import "TOPropertyAccessor.h"
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
